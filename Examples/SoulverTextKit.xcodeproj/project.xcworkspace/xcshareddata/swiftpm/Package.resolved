@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SoulverCore",
+        "repositoryURL": "https://github.com/soulverteam/SoulverCore",
+        "state": {
+          "branch": null,
+          "revision": "659f47b1693799445ed08e8713d4241eced1b170",
+          "version": "1.2.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
