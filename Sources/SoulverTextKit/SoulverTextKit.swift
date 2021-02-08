@@ -85,13 +85,13 @@ public class ParagraphCalculator {
     public func textDidChange() {
 
         // Hold onto the previous state before the text changed
-        let previousstringByParagraphs = self.stringByParagraphs
+        let previousStringByParagraphs = self.stringByParagraphs
         
         // Update to the new state of the textStorage
         self.stringByParagraphs = StringByParagraphs(contents: textStorage.string)
         
         // Determine which lines have been edited
-        let editedLines = self.stringByParagraphs.indexesDifferingFrom(stringByParagraphs: previousstringByParagraphs)
+        let editedLines = self.stringByParagraphs.indexesDifferingFrom(stringByParagraphs: previousStringByParagraphs)
         
         // And which of those lines are actually Soulver lines
         let editedSoulverLines = self.indexesOfSoulverLines.intersection(editedLines)
